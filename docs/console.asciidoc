@@ -5,7 +5,7 @@ The Console plugin provides a UI to interact with the REST API of Elasticsearch.
 where you compose requests to Elasticsearch, and the *response* pane, which displays the responses to the request.
 
 .The Console UI
-image::images/introduction_screen.png[Screenshot]
+image::images/introduction_screen.png[Screen shot]
 
 Console understands commands in a cURL-like syntax. For example the following Console command
 
