@@ -6,10 +6,12 @@ import {
   KuiFlexGroup,
   KuiFlexItem,
   KuiFlexGrid,
+  KuiTestingComponent,
 } from 'ui_framework/components';
 import { FeatureCatalogueCategory } from 'ui/registry/feature_catalogue';
 
 export function Home({ addBasePath, directories }) {
+  // console.log('directory : ', directories);
 
   const renderDirectories = (category) => {
     return directories
@@ -43,11 +45,12 @@ export function Home({ addBasePath, directories }) {
           >
             <KuiFlexItem>
               <h1 className="kuiTitle">
-                Welcome to Kibana
+                Welcome to Mi-Stream
               </h1>
+              <KuiTestingComponent>Hi Baby</KuiTestingComponent>
             </KuiFlexItem>
 
-            <KuiFlexItem grow={false}>
+          {/*<KuiFlexItem grow={false}>
               <KuiFlexGroup alignItems="center">
                 <KuiFlexItem grow={false}>
                   <p className="kuiText kuiSubduedText">
@@ -65,7 +68,7 @@ export function Home({ addBasePath, directories }) {
                 </KuiFlexItem>
               </KuiFlexGroup>
 
-            </KuiFlexItem>
+            </KuiFlexItem>*/}
           </KuiFlexGroup>
         </div>
 
@@ -73,24 +76,24 @@ export function Home({ addBasePath, directories }) {
           <KuiFlexGroup className="kuiVerticalRhythm">
             <KuiFlexItem className="kuiPanel homePanel">
               <h3 className="kuiSubTitle kuiVerticalRhythm">
-                Visualize and Explore Data
+                Integrate any type of data source
               </h3>
               <KuiFlexGrid className="kuiVerticalRhythmSmall homeTopFeatures" columns={2}>
                 { renderDirectories(FeatureCatalogueCategory.DATA) }
               </KuiFlexGrid>
             </KuiFlexItem>
-            <KuiFlexItem className="kuiPanel homePanel">
+            {/*<KuiFlexItem className="kuiPanel homePanel">
               <h3 className="kuiSubTitle kuiVerticalRhythm">
                 Manage and Administer the Elastic Stack
               </h3>
               <KuiFlexGrid className="kuiVerticalRhythmSmall homeTopFeatures" columns={2}>
                 { renderDirectories(FeatureCatalogueCategory.ADMIN) }
               </KuiFlexGrid>
-            </KuiFlexItem>
+            </KuiFlexItem>*/}
           </KuiFlexGroup>
         </div>
 
-        <div className="kuiViewContentItem kuiVerticalRhythmXLarge text-center">
+        {/*<div className="kuiViewContentItem kuiVerticalRhythmXLarge text-center">
           <h4 className="kuiSubduedText kuiVerticalRhythmSmall">
             Didn’t find what you were looking for?
           </h4>
@@ -100,7 +103,7 @@ export function Home({ addBasePath, directories }) {
           >
             View full directory of Kibana plugins
           </KuiLinkButton>
-        </div>
+        </div>*/}
 
       </div>
     </div>

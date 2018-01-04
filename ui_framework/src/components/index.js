@@ -1,6 +1,10 @@
 export { KuiActionItem } from './action_item';
 
 export {
+  KuiTestingComponent,
+} from './testing_component';
+
+export {
   KuiKeyboardAccessible,
   KuiScreenReaderOnly,
 } from './accessibility';
