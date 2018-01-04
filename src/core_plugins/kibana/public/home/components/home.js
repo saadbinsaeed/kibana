@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Synopsis } from './synopsis';
 import {
-  KuiLinkButton,
   KuiFlexGroup,
   KuiFlexItem,
   KuiFlexGrid,
@@ -49,8 +48,8 @@ export function Home({ addBasePath, directories }) {
               </h1>
               <KuiTestingComponent>Hi Baby</KuiTestingComponent>
             </KuiFlexItem>
-
-          {/*<KuiFlexItem grow={false}>
+            {/*
+            <KuiFlexItem grow={false}>
               <KuiFlexGroup alignItems="center">
                 <KuiFlexItem grow={false}>
                   <p className="kuiText kuiSubduedText">
@@ -68,7 +67,8 @@ export function Home({ addBasePath, directories }) {
                 </KuiFlexItem>
               </KuiFlexGroup>
 
-            </KuiFlexItem>*/}
+            </KuiFlexItem>
+            */}
           </KuiFlexGroup>
         </div>
 
